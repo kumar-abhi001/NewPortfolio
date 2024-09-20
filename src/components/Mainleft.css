@@ -1,0 +1,32 @@
+/* Mainleft.css */
+.main-left {
+    padding: 20px;
+    /* Add padding for internal spacing */
+    height: 100%;
+    /* Ensure it takes full height */
+    overflow: hidden;
+    /* Prevent internal scrolling */
+    margin: 64px 0 0 64px;
+}
+
+.main-img {
+    height: 184px;
+    width: 184px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.name-heading {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 2;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+}

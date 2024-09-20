@@ -1,0 +1,45 @@
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 356px;
+    font-weight: 500;
+    color: #4b5563;
+    border-radius: 20px;
+}
+
+.nav-div div {
+    cursor: pointer;
+}
+
+.navbar {
+    transition: backdrop-filter 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    height: 150%;
+    width: 100%;
+}
+
+.blur-nav {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Add transparency to the background but keep the border solid */
+}
+
+.nav-link {
+    cursor: pointer;
+    color: #000;
+    /* Default color */
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #666;
+    /* Hover effect */
+}
+
+.active-link {
+    color: red;
+    /* Active link is red */
+}
+
+
