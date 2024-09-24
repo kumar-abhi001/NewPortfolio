@@ -1,0 +1,6 @@
+.auto-rows-custom {
+    grid-auto-rows: 4rem;
+    /* Sets default row height to 4rem (64px) */
+}
+
+
