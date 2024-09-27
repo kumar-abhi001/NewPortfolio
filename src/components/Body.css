@@ -3,4 +3,6 @@
     /* Sets default row height to 4rem (64px) */
 }
 
-
+a {
+    cursor: pointer;
+}

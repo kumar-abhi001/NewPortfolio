@@ -91,7 +91,7 @@ export default function Body() {
           ring-zinc-900/5  rounded-2xl justify-between px-8 transition-all duration-300 py-6"
             >
               <div className="flex flex-row justify-between">
-                <div>Logo</div>
+                <div><img src="./twitter.svg" alt="twittericon" className='h-10 w-10'/></div>
                 <div className="w-fit h-7 p-1 px-4 text-white rounded-2xl bg-[#55acee]">
                   Follow
                 </div>
@@ -116,25 +116,25 @@ export default function Body() {
             href="https://drive.google.com/file/d/1kGhE28GRGZIGcNxrjXJVT6FSkq_bNuWT/view?usp=sharing"
             target="_blank"
           >
-            <SmallCard icon={"logo"} title="Resume" />
+            <SmallCard icon={<img src="./cv.svg" className="h-8 w-8"/>} title="Resume" />
           </a>
 
           {/* gmail */}
           <a href={`mailto:kumar.abhi.ok@gmail.com`}>
-            <SmallCard icon={"logo"} title="kumar.abhi.ok@gmail.com" />
+            <SmallCard icon={<img src='./gmail.svg' className='h-8 w-8' />} title="kumar.abhi.ok@gmail.com" />
           </a>
         </div>
       </div>
 
+      {/* Skill Section */}
+      <div>
+        <div>My Skills </div>
+        <div></div>
+      </div>
       {/* Project Section */}
       <div className="mt-16">
-        <div className="font-[600] text-lg">My Projects 💻</div>
-        <div className="grid grid-cols-2 grid-rows-3 gap-x-10 auto-rows-custom">
-          <div />
-        </div>
-
-        {/* Coding Profile Section */}
-        <div>
+        <div className="font-[600] text-lg mb-8">My Projects 💻</div>
+        <div className="grid grid-cols-2 gap-5 gap-y-10">
           <BigCard
             icon="icon"
             code={"github"}
@@ -142,6 +142,72 @@ export default function Body() {
             title={"title"}
             description={"description"}
           />
+
+          <BigCard
+            icon="icon"
+            code={"github"}
+            title={"title"}
+            description={"description"}
+          />
+
+          <BigCard
+            icon="icon"
+            code={"github"}
+            live={"live"}
+            title={"title"}
+            description={"description"}
+          />
+        </div>
+      </div>
+
+      {/*Profile Section */}
+      <div className="mt-16">
+        <div className="font-[600] text-lg mb-8">Profiles 🧑‍💻</div>
+        <div className="grid grid-cols-2 gap-2 gap-x-10">
+          <a href="">
+            <SmallCard
+              icon={
+                <img
+                  className="h-8 w-8 border-2 rounded-md"
+                  src="https://creatorspace.imgix.net/sites/favicons/aHR0cHM6Ly9sZWV0Y29kZS5jb20vZmF2aWNvbi5pY28=.ico?fm=png"
+                />
+              }
+              title={"Just a moment..."}
+            />
+          </a>
+          <a href="">
+            <SmallCard
+              icon={
+                <img
+                  className="h-8 w-8 border-2 rounded-md"
+                  src="https://storage.googleapis.com/creatorspace-public/sites%2Ffavicons%2FaHR0cHM6Ly9tZWRpYS5nZWVrc2ZvcmdlZWtzLm9yZy93cC1jb250ZW50L2Nkbi11cGxvYWRzL2dmZ19mYXZpY29uLnBuZw%3D%3D.png"
+                />
+              }
+              title={"kumar-abhi001 | geeksforgeeks"}
+            />
+          </a>
+          <a href="">
+            <SmallCard
+              icon={
+                <img
+                  src="./codingninjas.svg"
+                  className="h-8 w-8 border-2 rounded-md"
+                />
+              }
+              title={"codestudio.com"}
+            />
+          </a>
+          <a href="">
+            <SmallCard
+              icon={
+                <img
+                  src="hackerrank.png"
+                  className="h-8 w-8 border-2 rounded-md"
+                />
+              }
+              title={"HackerRank"}
+            />
+          </a>
         </div>
       </div>
     </div>
