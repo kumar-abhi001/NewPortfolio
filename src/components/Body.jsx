@@ -91,7 +91,13 @@ export default function Body() {
           ring-zinc-900/5  rounded-2xl justify-between px-8 transition-all duration-300 py-6"
             >
               <div className="flex flex-row justify-between">
-                <div><img src="./twitter.svg" alt="twittericon" className='h-10 w-10'/></div>
+                <div>
+                  <img
+                    src="./twitter.svg"
+                    alt="twittericon"
+                    className="h-10 w-10"
+                  />
+                </div>
                 <div className="w-fit h-7 p-1 px-4 text-white rounded-2xl bg-[#55acee]">
                   Follow
                 </div>
@@ -116,21 +122,72 @@ export default function Body() {
             href="https://drive.google.com/file/d/1kGhE28GRGZIGcNxrjXJVT6FSkq_bNuWT/view?usp=sharing"
             target="_blank"
           >
-            <SmallCard icon={<img src="./cv.svg" className="h-8 w-8"/>} title="Resume" />
+            <SmallCard
+              icon={<img src="./file.png" className="h-8 w-8" />}
+              title="Resume"
+            />
           </a>
 
           {/* gmail */}
           <a href={`mailto:kumar.abhi.ok@gmail.com`}>
-            <SmallCard icon={<img src='./gmail.svg' className='h-8 w-8' />} title="kumar.abhi.ok@gmail.com" />
+            <SmallCard
+              icon={<img src="./gmail.svg" className="h-8 w-8" />}
+              title="kumar.abhi.ok@gmail.com"
+            />
           </a>
         </div>
       </div>
 
       {/* Skill Section */}
-      <div>
-        <div>My Skills </div>
-        <div></div>
+      <div className='mt-16'>
+        <div className="font-[600] text-lg">My Skills⚒️ </div>
+        <div className='flex flex-col gap-2 mt-8'>
+          <div className="flex flex-row gap-2">
+            <div className="font-bold">Language:</div>
+            <div>
+              <ul className="flex flex-row gap-2">
+                <li>C/C++</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className='flex flex-row gap-2'>
+            <div className="font-bold">Web Technology:</div>
+            <div>
+              <ul className="flex flex-row gap-2">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>TailwindCSS</li>
+                <li>React.js</li>
+                <li>Express.js</li>
+                <li>Node.js</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className='flex flex-row gap-2'>
+            <div className="font-bold">Databases:</div>
+            <div>
+              <ul className="flex flex-row gap-2">
+                <li>MongoDB</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className='flex flex-row gap-2'>
+            <div className="font-bold">Tools:</div>
+            <div>
+              <ul className="flex flex-row gap-2">
+                <li>Git/Github</li>
+                <li>Postman</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
+      
       {/* Project Section */}
       <div className="mt-16">
         <div className="font-[600] text-lg mb-8">My Projects 💻</div>
