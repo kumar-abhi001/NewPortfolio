@@ -11,21 +11,47 @@ export default function Footer() {
           <a href="">Link</a>
         </div>
         <div className="flex flex-col">
-          <a href="">Github</a>
-          <a href="">LinkedIn</a>
-          <a href="">Twitter</a>
+          <a href="https://github.com/kumar-abhi001/E-Learning" target="_blank">
+            Github
+          </a>
+          <a href="https://www.linkedin.com/in/kumar-abhi001/" target="_blank">
+            LinkedIn
+          </a>
+          <a href="https://x.com/_kumar_abhi__" target="_blank">
+            Twitter
+          </a>
           <a href="">Instagram</a>
         </div>
         <div className="flex flex-col">
-          <a href="">Leetcode</a>
-          <a href="">Gfg</a>
-          <a href="">CodeStudio</a>
-          <a href="">CodeChef</a>
-          <a href="">CodeForces</a>
+          <a href="https://leetcode.com/kumar-abhi001" target="_blank">
+            Leetcode
+          </a>
+          <a
+            href="https://www.geeksforgeeks.org/user/kumarabhi001/"
+            target="_blank"
+          >
+            Gfg
+          </a>
+          <a
+            href="https://www.naukri.com/code360/profile/kumar_abhi"
+            target="_blank"
+          >
+            CodeStudio
+          </a>
+          <a href="https://www.codechef.com/users/abhishek6356" target="_blank">
+            CodeChef
+          </a>
+          <a href="https://codeforces.com/profile/abhishek6356" target="_blank">
+            CodeForces
+          </a>
         </div>
       </div>
       <div>
-        <div className="text-[#aeb3be]">Find me on X</div>
+        <div className="text-[#aeb3be]">
+          Find me on <a href="https://x.com/_kumar_abhi__" target='_blank'>
+          <img src="./twitter.png" alt="twitter" className='h-10 w-10 inline' />
+          </a>
+        </div>
         <div className="text-[#aeb3be]">
           Portfolio inspired by <a href="#many">Manu Arora</a>
         </div>

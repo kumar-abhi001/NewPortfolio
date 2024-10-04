@@ -139,9 +139,9 @@ export default function Body() {
       </div>
 
       {/* Skill Section */}
-      <div className='mt-16'>
+      <div className="mt-16">
         <div className="font-[600] text-lg">My Skills⚒️ </div>
-        <div className='flex flex-col gap-2 mt-8'>
+        <div className="flex flex-col gap-2 mt-8">
           <div className="flex flex-row gap-2">
             <div className="font-bold">Language:</div>
             <div>
@@ -152,7 +152,7 @@ export default function Body() {
             </div>
           </div>
 
-          <div className='flex flex-row gap-2'>
+          <div className="flex flex-row gap-2">
             <div className="font-bold">Web Technology:</div>
             <div>
               <ul className="flex flex-row gap-2">
@@ -166,7 +166,7 @@ export default function Body() {
             </div>
           </div>
 
-          <div className='flex flex-row gap-2'>
+          <div className="flex flex-row gap-2">
             <div className="font-bold">Databases:</div>
             <div>
               <ul className="flex flex-row gap-2">
@@ -176,7 +176,7 @@ export default function Body() {
             </div>
           </div>
 
-          <div className='flex flex-row gap-2'>
+          <div className="flex flex-row gap-2">
             <div className="font-bold">Tools:</div>
             <div>
               <ul className="flex flex-row gap-2">
@@ -187,7 +187,7 @@ export default function Body() {
           </div>
         </div>
       </div>
-      
+
       {/* Project Section */}
       <div className="mt-16">
         <div className="font-[600] text-lg mb-8">My Projects 💻</div>
@@ -221,7 +221,7 @@ export default function Body() {
       <div className="mt-16">
         <div className="font-[600] text-lg mb-8">Profiles 🧑‍💻</div>
         <div className="grid grid-cols-2 gap-2 gap-x-10">
-          <a href="">
+          <a href="https://leetcode.com/kumar-abhi001" target="_blank">
             <SmallCard
               icon={
                 <img
@@ -232,7 +232,10 @@ export default function Body() {
               title={"Just a moment..."}
             />
           </a>
-          <a href="">
+          <a
+            href="https://www.geeksforgeeks.org/user/kumarabhi001/"
+            target="_blank"
+          >
             <SmallCard
               icon={
                 <img
@@ -243,7 +246,10 @@ export default function Body() {
               title={"kumar-abhi001 | geeksforgeeks"}
             />
           </a>
-          <a href="">
+          <a
+            href="https://www.naukri.com/code360/profile/kumar_abhi"
+            target="_blank"
+          >
             <SmallCard
               icon={
                 <img
@@ -254,7 +260,7 @@ export default function Body() {
               title={"codestudio.com"}
             />
           </a>
-          <a href="">
+          <a href="https://www.hackerrank.com/profile/kumar_abhi_ok" target='_blank'>
             <SmallCard
               icon={
                 <img
