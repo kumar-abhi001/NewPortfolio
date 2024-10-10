@@ -1,10 +1,9 @@
-import React from 'react';
-import SmallCard from './SmallCard';
+import React from "react";
+import SmallCard from "./SmallCard";
 import "./Body.css";
-import BigCard from './BigCard';
+import BigCard from "./BigCard";
 
 export default function Body() {
-    
   return (
     <div>
       {/* Welcom Section */}
@@ -260,7 +259,10 @@ export default function Body() {
               title={"codestudio.com"}
             />
           </a>
-          <a href="https://www.hackerrank.com/profile/kumar_abhi_ok" target='_blank'>
+          <a
+            href="https://www.hackerrank.com/profile/kumar_abhi_ok"
+            target="_blank"
+          >
             <SmallCard
               icon={
                 <img

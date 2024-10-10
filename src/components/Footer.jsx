@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.css'
 export default function Footer() {
   return (
-    <div className=" text-[#7a808c] font-normal">
+    <div className=" text-[#7a808c] font-normal" id='footer'>
       <div className="footer-1 grid grid-cols-3 my-10">
         <div className="flex flex-col">
           <a href="">Home</a>
