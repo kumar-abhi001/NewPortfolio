@@ -192,26 +192,31 @@ export default function Body() {
         <div className="font-[600] text-lg mb-8">My Projects 💻</div>
         <div className="grid grid-cols-2 gap-5 gap-y-10">
           <BigCard
-            icon="icon"
-            code={"github"}
-            live={"live"}
-            title={"title"}
-            description={"description"}
+            icon="https://storage.googleapis.com/creatorspace-public/sites%2Ffavicons%2FaHR0cHM6Ly9mdXNpb24tdGhlLWVjb21tZXJjZS1zaG9wLnZlcmNlbC5hcHAvdml0ZS5zdmc%3D.svg"
+            code={"https://github.com/kumar-abhi001/video-hub"}
+            live={"https://video-hub-dun.vercel.app/"}
+            title={"Video Hub"}
+            description={"A video sharing platform"}
+            photo="./project-1.png"
           />
 
           <BigCard
             icon="icon"
-            code={"github"}
-            title={"title"}
-            description={"description"}
+            code={"https://github.com/kumar-abhi001/E-Learning"}
+            title={"E-Learning"}
+            description={"Course Selling Platform for college students."}
+            photo="./project-1.png"
           />
 
           <BigCard
-            icon="icon"
-            code={"github"}
-            live={"live"}
-            title={"title"}
-            description={"description"}
+            icon="https://storage.googleapis.com/creatorspace-public/sites%2Ffavicons%2FaHR0cHM6Ly9mdXNpb24tdGhlLWVjb21tZXJjZS1zaG9wLnZlcmNlbC5hcHAvdml0ZS5zdmc%3D.svg"
+            code={"https://github.com/kumar-abhi001/innovateX_Hackathon"}
+            live={"https://innovate-x-hackathon.vercel.app/"}
+            title={"Career Compass"}
+            description={
+              "Job Listing and Finding websites for both recruiter and student."
+            }
+            photo="./project-1.png"
           />
         </div>
       </div>

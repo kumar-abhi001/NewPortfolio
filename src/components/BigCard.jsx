@@ -29,19 +29,17 @@ export default function BigCard({
 
   return (
     <div
-      className="flex flex-col h-full big-card hover:shadow-lg bg-white/90 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1
-          ring-zinc-900/5  rounded-2xl min-h-16 transition-all duration-300 justify-start p-4 pt-7"
+      className="flex flex-col h-[390px] big-card hover:shadow-lg bg-white/90 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1
+          ring-zinc-900/5  rounded-2xl transition-all duration-300 justify-start p-4 pt-7"
       onMouseMove={handleMouseMove}
       onMouseOut={() => setBgPosition({ x: "-100%", y: "-20%" })}
       style={{
         background: `radial-gradient(300px at ${bgPosition.x} ${bgPosition.y}, rgb(228, 247, 242), transparent)`,
-
-        // radial-gradient(300px at 4.39996px 95px, white, transparent)
       }}
     >
       <div className="flex flex-row w-full justify-between align-middle mb-4">
         <a href={live} target="_blank">
-          {icon}
+          <img src={icon} alt="vercel" />
         </a>
         <div className="heading px-2">
           <a
@@ -70,9 +68,8 @@ export default function BigCard({
       <div className="leading-6 pt-4 text-gray-700 dark:text-gray-300">
         {description}
       </div>
-      <div>
-        <img src={photo} alt="project" />
-      </div>
+        <img src={photo} alt="project" className="mt-10 h-1/2 rounded-lg bg-slate-300" />
+      
     </div>
   );
 }
