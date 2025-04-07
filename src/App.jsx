@@ -4,9 +4,9 @@ import MainRight from "./components/MainRight";
 
 function App() {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row dark:bg-[#18181b] dark:text-white">
       {/* Left part: Sticky */}
-      <div className="w-2/3 h-1/2 sticky top-0 overflow">
+      <div className="w-2/3 h-1/2 sticky top-0 overflow dark:text-white">
         <MainLeft />
       </div>
       <MainRight />

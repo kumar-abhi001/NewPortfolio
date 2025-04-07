@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
+import DarkModeToggle from "./DarkModeToggle";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,19 +26,24 @@ export default function Navbar() {
   return (
     <div
       className={`navbar flex justify-between items-center h-[36px] py-10 px-6 ${
-        isScrolled ? "blur-nav" : ""
+        isScrolled ? "blur-nav dark:bg-inherit" : ""
       }`}
     >
-      <div>Theme</div>
+      {/* Theme Toggle Button */}
+      <div>
+        <DarkModeToggle/>
+      </div>
+
+      {/* Navbar Options */}
       <div
         className="nav-div
          bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1
-          ring-zinc-900/5 backdrop-blur"
+          ring-zinc-900/5 backdrop-blur dark:bg-gray-700 "
       >
         {["Home", "Skills", "Projects", "Profile", "Socials"].map((link) => (
           <div
             key={link}
-            className={`nav-link cursor-pointer mx-2 ${
+            className={`nav-link cursor-pointer mx-2  ${
               activeLink === link ? "active-link" : ""
             }`}
             onClick={() => handleLinkClick(link)}
