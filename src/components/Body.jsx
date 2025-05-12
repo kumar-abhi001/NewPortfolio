@@ -83,11 +83,11 @@ export default function Body() {
           <a
             href="https://x.com/_kumar_abhi__"
             target="_blank"
-            className="row-span-2"
+            className="row-span-2 border-2 rounded-xl"
           >
             <div
               className="bg-[#f5fafe] text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1
-          ring-zinc-900/5  rounded-2xl justify-between px-8 transition-all duration-300 py-6"
+          ring-zinc-900/5  rounded-2xl justify-between px-8 transition-all duration-300 py-6 dark:bg-inherit dark:text-white"
             >
               <div className="flex flex-row justify-between">
                 <div>
@@ -97,7 +97,7 @@ export default function Body() {
                     className="h-10 w-10"
                   />
                 </div>
-                <div className="w-fit h-7 p-1 px-4 text-white rounded-2xl bg-[#55acee]">
+                <div className="w-fit h-7 p-1 px-4 hover:underline text-white rounded-2xl bg-[#55acee]">
                   Follow
                 </div>
               </div>
@@ -105,8 +105,7 @@ export default function Body() {
               <div className="text-lg">Twitter</div>
               <div className="mb-4 text-[#7e8284]">@_kumar_abhi__</div>
               <div className="text-[#7e8284] font-[300]">
-                ✦freelancer ✦full stack developer✦mern ✦ nextjs ✦ 2x intern at
-                us based startups
+                ✦freelancer ✦full stack developer✦mern ✦ nextjs
               </div>
             </div>
           </a>

@@ -53,7 +53,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="text-[#aeb3be]">
-          Portfolio inspired by <a href="#many">Manu Arora</a>
+          Portfolio inspired by <a href="https://manuarora.in/">Manu Arora</a>
         </div>
       </div>
     </div>

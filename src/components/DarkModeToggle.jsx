@@ -7,7 +7,7 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={() => setIsDarkMode(!isDarkMode)}
-      className="p-2 rounded  text-black dark:text-white transition"
+      className="px-2 py-1 rounded-2xl border-2 dark  text-black dark:text-white transition"
     >
       {isDarkMode ? "☀️" : "🌙"}
     </button>

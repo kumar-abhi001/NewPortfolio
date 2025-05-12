@@ -17,5 +17,5 @@ This is my personal **Portfolio Website** built using **React** and **TailwindCS
 - About Me section with skill highlights
 - Contact form or email/social links
 - Clean UI using TailwindCSS utilities
-- Dark mode (if implemented)
+- Dark mode
 
