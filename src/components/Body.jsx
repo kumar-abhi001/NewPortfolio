@@ -6,11 +6,11 @@ import BigCard from "./BigCard";
 export default function Body() {
   return (
     <div>
-      {/* Welcom Section */}
+      {/* Welcome Section */}
       <div className="welcome-section">
         <div className="font-[600] text-lg">Welcome 👋🏻</div>
         <div className=" grid grid-cols-2 grid-rows-5 gap-y-1 gap-x-10 auto-rows-custom">
-          {/* //linkedin */}
+          {/* Linkedin */}
           <a href="https://www.linkedin.com/in/kumar-abhi001/" target="_blank">
             <SmallCard
               icon={
@@ -83,7 +83,7 @@ export default function Body() {
           <a
             href="https://x.com/_kumar_abhi__"
             target="_blank"
-            className="row-span-2 border-2 rounded-xl"
+            className="row-span-2 border-2 rounded-xl dark:border-[#313e51] dark:bg-[#27272a]"
           >
             <div
               className="bg-[#f5fafe] text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1
@@ -97,7 +97,7 @@ export default function Body() {
                     className="h-10 w-10"
                   />
                 </div>
-                <div className="w-fit h-7 p-1 px-4 hover:underline text-white rounded-2xl bg-[#55acee]">
+                <div className="w-fit h-7 p-1 px-4 hover:underline text-white  rounded-2xl bg-[#55acee]">
                   Follow
                 </div>
               </div>
@@ -112,7 +112,11 @@ export default function Body() {
 
           {/* Portfolio */}
           <a href="" className="row-span-4 border-2 rounded-2xl">
-            Portfolio
+            <BigCard
+            title={"Personal Portfolio"}
+            description={"Portolio using HTML, CSS and JavaScript"}
+            photo="./Portfolio.png"
+          />
           </a>
 
           {/* Resume */}
@@ -205,14 +209,6 @@ export default function Body() {
             title={"Video Hub"}
             description={"A video sharing platform"}
             photo="./Videohub.png"
-          />
-          <BigCard
-            icon="https://storage.googleapis.com/creatorspace-public/sites%2Ffavicons%2FaHR0cHM6Ly9mdXNpb24tdGhlLWVjb21tZXJjZS1zaG9wLnZlcmNlbC5hcHAvdml0ZS5zdmc%3D.svg"
-            code={"https://github.com/kumar-abhi001/Portfolio"}
-            live={"https://portfolio-coral-chi-24.vercel.app/"}
-            title={"Personal Portfolio"}
-            description={"Portolio using HTML, CSS and JavaScript"}
-            photo="./Portfolio.png"
           />
         </div>
       </div>

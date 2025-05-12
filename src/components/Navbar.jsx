@@ -5,6 +5,7 @@ import DarkModeToggle from "./DarkModeToggle";
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
+  const links = ["Home", "Skills", "Projects", "Profile", "Socials"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,23 +36,28 @@ export default function Navbar() {
       </div>
 
       {/* Navbar Options */}
-      <div
-        className="nav-div
-         bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1
-          ring-zinc-900/5 backdrop-blur dark:bg-gray-700 "
+  <div className="flex gap-4">
+  {links.map((link) => (
+    <a
+      key={link}
+      onClick={() => setActiveLink(link)}
+      className="relative rounded-lg px-3 inline-block py-2 text-sm text-gray-700 dark:text-gray-200 transition-all delay-150 cursor-pointer"
+    >
+      <span
+        className={`relative z-10 ${
+          activeLink === link ? "text-teal-600" : ""
+        }`}
       >
-        {["Home", "Skills", "Projects", "Profile", "Socials"].map((link) => (
-          <div
-            key={link}
-            className={`nav-link cursor-pointer mx-2  ${
-              activeLink === link ? "active-link" : ""
-            }`}
-            onClick={() => handleLinkClick(link)}
-          >
-            {link}
-          </div>
-        ))}
-      </div>
+        {link}
+      </span>
+
+      {activeLink === link && (
+        <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/50 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
+      )}
+    </a>
+  ))}
+</div>
+
     </div>
   );
 }

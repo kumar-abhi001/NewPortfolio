@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    width: 356px;
     font-weight: 500;
     color: #4b5563;
     border-radius: 20px;
@@ -32,14 +31,5 @@
     transition: color 0.2s ease-in-out;
 }
 
-.nav-link:hover {
-    color: #666;
-    /* Hover effect */
-}
-
-.active-link {
-    color: red;
-    /* Active link is red */
-}
 
 

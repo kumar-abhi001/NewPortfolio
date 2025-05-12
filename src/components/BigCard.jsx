@@ -40,17 +40,17 @@ export default function BigCard({
     >
       <div className="flex flex-row w-full justify-between align-middle mb-4">
         <a href={live} target="_blank" className="">
-          <img src={icon} alt="vercel" />
+          {icon && (<img src={icon} alt="vercel" />)}
         </a>
         <div className="heading px-2">
-          <a
+          {code && (<a
             href={code}
             target="_blank"
             rel="noopener noreferrer"
             className="button inline-block py-1 px-3 rounded-lg bg-[#627cfc] text-white hover:bg-[#7f8df8]"
           >
             Code
-          </a>
+          </a>)}
           {live && (
             <a
               href={live}
