@@ -1,7 +1,7 @@
 import "./App.css";
 import MainLeft from "./components/MainLeft";
 import MainRight from "./components/MainRight";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
