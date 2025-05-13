@@ -36,7 +36,7 @@ export default function Navbar() {
       </div>
 
       {/* Navbar Options */}
-  <div className="flex gap-4">
+  <div className="nav-div flex gap-4">
   {links.map((link) => (
     <a
       key={link}

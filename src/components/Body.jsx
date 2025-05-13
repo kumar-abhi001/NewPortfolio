@@ -111,7 +111,7 @@ export default function Body() {
           </a>
 
           {/* Portfolio */}
-          <a href="" className="row-span-4 border-2 rounded-2xl">
+          <a href="" className="row-span-4">
             <BigCard
             title={"Personal Portfolio"}
             description={"Portolio using HTML, CSS and JavaScript"}

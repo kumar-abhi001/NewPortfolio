@@ -1,6 +1,7 @@
 import "./App.css";
 import MainLeft from "./components/MainLeft";
 import MainRight from "./components/MainRight";
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <MainLeft />
       </div>
       <MainRight />
+      <Analytics />
     </div>
   );
 }
